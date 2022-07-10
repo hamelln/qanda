@@ -1,3 +1,4 @@
+import ItemSlider from "./SwiperItem/ItemSlider";
 import * as S from "./Styles";
 
 const ProductView = () => {
@@ -65,6 +66,7 @@ const ProductView = () => {
           </S.ProductRightSide>
         </S.ProductItem>
       </S.ProductViewSection>
+      <ItemSlider></ItemSlider>
     </S.ProductViewWrapper>
   );
 };
