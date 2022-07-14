@@ -131,7 +131,7 @@ const SwiperContainer = styled.div`
 `;
 
 const SwiperWrapper = styled.div`
-  transform: translate3d(-750px, 0px, 0px);
+  /* transform: translate3d(-750px, 0px, 0px); */
   transition-duration: 0ms;
   position: relative;
   width: 100%;
@@ -152,6 +152,19 @@ const SwiperPagination = styled.div`
 const SwiperItem = styled.div`
   width: 740px;
   margin-right: 10px;
+`;
+
+const SwiperImg = styled.img`
+  width: 100%;
+  background: rgb(239, 239, 239);
+  border-radius: 12px;
+`;
+
+const SwiperItemText = styled.p`
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
 `;
 
 const ImageSlideButton = styled.div``;
@@ -179,4 +192,6 @@ export {
   SwiperPagination,
   SwiperWrapper,
   SwiperItem,
+  SwiperImg,
+  SwiperItemText,
 };

@@ -1,7 +1,15 @@
 import ItemSlider from "./SwiperItem/ItemSlider";
 import * as S from "./Styles";
+import Slider from "react-slick";
 
 const ProductView = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   const describe = "";
 
   return (
@@ -53,12 +61,7 @@ const ProductView = () => {
                 </S.StoreButtonWrapper>
               </S.ProductCardLinks>
               <S.ProductCardSwiperContainer>
-                <S.SwiperContainer>
-                  <S.SwiperWrapper>
-                    <S.SwiperItem></S.SwiperItem>
-                  </S.SwiperWrapper>
-                </S.SwiperContainer>
-                <S.SwiperPagination></S.SwiperPagination>
+                <ItemSlider />
                 <S.ImageSlideButton></S.ImageSlideButton>
                 <S.ImageSlideButton></S.ImageSlideButton>
               </S.ProductCardSwiperContainer>
@@ -66,7 +69,6 @@ const ProductView = () => {
           </S.ProductRightSide>
         </S.ProductItem>
       </S.ProductViewSection>
-      <ItemSlider></ItemSlider>
     </S.ProductViewWrapper>
   );
 };
