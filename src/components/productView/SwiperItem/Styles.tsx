@@ -27,28 +27,48 @@ const StyledSlider = styled(Slider)`
       margin: 0;
     }
   }
+
+  :hover {
+    & .slick-arrow {
+      opacity: 1;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    cursor: pointer;
+    z-index: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(rgba(0, 0, 0, 0.07) 0px 5px 30px);
+    box-shadow: rgb(0 0 0 / 7%) 0px 0px 30px;
+    transition: opacity 0.3s ease 0s;
+    opacity: 0;
+  }
+
+  .slick-prev {
+    left: -25px;
+    ::before {
+      content: none;
+    }
+    background-image: url("https://mathpresso.com/assets/icons/arrow-left.svg");
+  }
+
+  .slick-next {
+    right: -25px;
+    ::before {
+      content: none;
+    }
+    background-image: url("https://mathpresso.com/assets/icons/arrow-right.svg");
+  }
 `;
 
-const ImageSlideButton = styled.div`
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  top: 0px;
-  bottom: 0px;
-  margin: auto;
-  cursor: pointer;
-  z-index: 1;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-`;
-
-export {
-  Main,
-  SwiperImg,
-  SwiperItem,
-  SwiperItemText,
-  StyledSlider,
-  ImageSlideButton,
-};
+export { Main, SwiperImg, SwiperItem, SwiperItemText, StyledSlider };

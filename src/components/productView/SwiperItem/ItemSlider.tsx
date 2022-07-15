@@ -7,7 +7,7 @@ const ItemSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     dotsClass: "slick-dots",
