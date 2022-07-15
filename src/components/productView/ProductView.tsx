@@ -1,6 +1,8 @@
 import ItemSlider from "./SwiperItem/ItemSlider";
 import * as S from "./Styles";
 import Slider from "react-slick";
+import VietnamSwiper from "./VietnamSwiper/VietnamSwiper";
+import Footer from "../footer/Footer";
 
 const ProductView = () => {
   const settings = {
@@ -62,8 +64,6 @@ const ProductView = () => {
               </S.ProductCardLinks>
               <S.ProductCardSwiperContainer>
                 <ItemSlider />
-                <S.ImageSlideButton></S.ImageSlideButton>
-                <S.ImageSlideButton></S.ImageSlideButton>
               </S.ProductCardSwiperContainer>
             </S.ProductCardWrapper>
           </S.ProductRightSide>
@@ -102,7 +102,36 @@ const ProductView = () => {
             </S.ProductCardWrapper>
           </S.ProductRightSide>
         </S.ProductItem>
+        <S.ProductItem>
+          <S.ProductLeftSide>
+            <S.ProductLogoImage src="https://mathpresso.com/assets/images/product/product-logo-study.svg" />
+          </S.ProductLeftSide>
+          <S.ProductRightSide>
+            <S.ProductCardWrapper>
+              <S.ProductCardTitle>
+                Learn it Your Way - QANDA Study
+              </S.ProductCardTitle>
+              <S.ProductCardDescription>
+                최고의 선생님과 학생을 연결하는 콘텐츠 허브 QANDA STUDY는 베트남
+                최고의 선생님, 학원과의 파트너십을 통해 학생의 성장을
+                지원합니다. 지금까지 소수만 누릴 수 있었던 양질의 학습 콘텐츠를
+                제작하고 유통 체인을 구축함으로써 최대한 많은 학생에게 교육
+                기회를 제공하고 있습니다.
+              </S.ProductCardDescription>
+              <S.ProductCardLinks>
+                <S.StoreButtonWrapper href="https://www.facebook.com/QANDASTUDY">
+                  <S.StoreButtonIcon src="https://mathpresso.com/assets/icons/facebook.png" />
+                  <S.StoreButtonLabel>Web</S.StoreButtonLabel>
+                </S.StoreButtonWrapper>
+              </S.ProductCardLinks>
+              <S.ProductCardSwiperContainer>
+                <VietnamSwiper />
+              </S.ProductCardSwiperContainer>
+            </S.ProductCardWrapper>
+          </S.ProductRightSide>
+        </S.ProductItem>
       </S.ProductViewSection>
+      <Footer />
     </S.ProductViewWrapper>
   );
 };
