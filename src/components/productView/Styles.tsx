@@ -34,6 +34,9 @@ const ProductViewSection = styled.section`
 `;
 
 const ProductItem = styled.li`
+  :not(:first-child) {
+    border-top: 1px solid rgb(239, 239, 239);
+  }
   display: flex;
   padding: 120px 0px;
 `;

@@ -1,6 +1,9 @@
+import { useState } from "react";
 import * as S from "./Styles";
 
 const Header = () => {
+  const active = useState("active");
+
   return (
     <div>
       <S.HeaderWrpper>

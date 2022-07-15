@@ -55,7 +55,6 @@ const StyledSlider = styled(Slider)`
   }
 
   .slick-prev {
-    left: -25px;
     ::before {
       content: none;
     }
@@ -63,7 +62,6 @@ const StyledSlider = styled(Slider)`
   }
 
   .slick-next {
-    right: -25px;
     ::before {
       content: none;
     }

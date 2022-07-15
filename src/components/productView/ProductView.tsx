@@ -68,6 +68,40 @@ const ProductView = () => {
             </S.ProductCardWrapper>
           </S.ProductRightSide>
         </S.ProductItem>
+        <S.ProductItem>
+          <S.ProductLeftSide>
+            <S.ProductLogoImage src="https://mathpresso.com/assets/images/product/product-logo-tutor.svg"></S.ProductLogoImage>
+          </S.ProductLeftSide>
+          <S.ProductRightSide>
+            <S.ProductCardWrapper>
+              <S.ProductCardTitle>
+                나에게 딱 맞는 선생님과 맞춤 과외로
+                <br></br>
+                성적 상승
+              </S.ProductCardTitle>
+              <S.ProductCardDescription>
+                콴다과외는 100% 비대면, 1:1 과외 서비스로, 학생의 성적, 목표,
+                성향까지 고려한 스마트 매칭을 통해 '가장 최적화된 교육'을
+                제공합니다.
+              </S.ProductCardDescription>
+              <S.ProductCardLinks>
+                <S.StoreButtonWrapper href="https://tutor.qanda.ai/">
+                  <S.StoreButtonIcon src="https://mathpresso.com/assets/icons/web.svg"></S.StoreButtonIcon>
+                  <S.StoreButtonLabel>Web</S.StoreButtonLabel>
+                </S.StoreButtonWrapper>
+              </S.ProductCardLinks>
+              <S.ProductCardSwiperContainer>
+                <S.SwiperContainer>
+                  <S.SwiperWrapper>
+                    <S.SwiperItem>
+                      <S.SwiperImg src="https://mathpresso.com/assets/images/product/product-tutor-1-1.png"></S.SwiperImg>
+                    </S.SwiperItem>
+                  </S.SwiperWrapper>
+                </S.SwiperContainer>
+              </S.ProductCardSwiperContainer>
+            </S.ProductCardWrapper>
+          </S.ProductRightSide>
+        </S.ProductItem>
       </S.ProductViewSection>
     </S.ProductViewWrapper>
   );
